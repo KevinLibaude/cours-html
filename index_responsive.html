@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>Une page</title>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="css/main.css" type="text/css">
     </head>
     <body>
         <header>
-            <img src="img/logo.jpg" id="logo" alt="logo représentant un éléphant avec sa trompe au coucher du soleil dans la savane" width="64px"/>
-            <navbar>
-                <a href="#">Home</a> |
-                <a href="#">Courses</a> |
-                <a href="#">Blog</a> |
-                <a href="#">Contact</a>
-            </navbar>
-            <section id="search">
-                <input type="search" placeholder="Search" />
-                <input type="submit" value="Search"/>
-            </section>
-            <img src="img/savane.jpg" />
-        </header>
-
-        <div id="african_species">
-            <section id="birds">
+            <div class="header-content">
+                <img src="img/logo.jpg" id="logo" alt="logo représentant un éléphant avec sa trompe au coucher du soleil dans la savane" />
+                <nav class="navbar">
+                    <a href="#">Home</a>
+                    <a href="#">Courses</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>
+                </nav>
+                <section id="search">
+                    <input type="search" placeholder="Search" />
+                    <input type="submit" value="Search" />
+                </section>
+            </div>
+            <img src="img/savane.jpg" id="image_header" alt="Représente la savane" />
+        </header>        
+        <div id="title">Explore all of Africa's species below</div>
+        <div id="cards">
+            <div id="birds">
                 <div class="card">
                     <a href="#">
-                        <div class="card-image"><img src="img/oiseaux.webp" alt="Image d'un oiseau d'afrique" /></div>
+                        <div class="card-image"><img src="img/oiseaux.webp" alt="Représente un oiseau d'afrique" /></div>
                 
                         <div class="card-body">
                 
@@ -37,11 +40,11 @@
                         </div>
                     </a>
                 </div>
-            </section>
-            <section id="invertebrates">
+            </div>
+            <div id="invertebrates">
                 <div class="card">
                     <a href="#">
-                        <div class="card-image"><img src="img/invertebres.webp" alt="Image représentant tout les invertébrés" /></div>
+                        <div class="card-image"><img src="img/invertebres.webp" alt="Représente tout les invertébrés" /></div>
                 
                         <div class="card-body">
                 
@@ -54,10 +57,11 @@
                         </div>
                     </a>
                 </div>
-            </section><section id="mammals">
+            </div>
+            <div id="mammals">
                 <div class="card">
                     <a href="#">
-                        <div class="card-image"><img src="img/tatou.jpg" alt="image représentant un mamifère" /></div>
+                        <div class="card-image"><img src="img/tatou.jpg" alt="Représente un mamifère" /></div>
                 
                         <div class="card-body">
                 
@@ -70,11 +74,11 @@
                         </div>
                     </a>
                 </div>
-            </section>
-            <section id="reptiles_amphibians">
+            </div>
+            <div id="reptiles_amphibians">
                 <div class="card">
                     <a href="#">
-                        <div class="card-image"><img src="img/reptiles.webp" alt="une image" /></div>
+                        <div class="card-image"><img src="img/reptiles.webp" alt="Représente des resptiles" /></div>
                 
                         <div class="card-body">
                 
@@ -87,11 +91,11 @@
                         </div>
                     </a>
                 </div>
-            </section>
-            <section id="trees">
+            </div>
+            <div id="trees">
                 <div class="card">
                     <a href="#">
-                        <div class="card-image"><img src="img/arbres.webp" alt="une image" /></div>
+                        <div class="card-image"><img src="img/arbres.webp" alt="Représente un arbre" /></div>
                 
                         <div class="card-body">
                 
@@ -104,8 +108,8 @@
                         </div>
                     </a>
                 </div>
-            </section>
-            <section id="other">
+            </div>
+            <div id="other">
                 <div class="card">
                     <a href="#">
                         <div class="card-image"><img src="img/autres.webp" alt="une image" /></div>
@@ -121,20 +125,38 @@
                         </div>
                     </a>
                 </div>
-            </section>
+            </div>
             
         </div>
+
+        <img src="img/savane_2.jpg" id="image_pre_footer" alt="Représente la savane avec un arbre au milieu sans aucun animaux"/>
         
         <footer>
-            <section id="about">
-            
-            </section>
-            <section id="get_involved">
-
-            </section>
-            <section>
-
-            </section>
-        </footer>
+            <div id="high_footer">
+                <section class="footer-section" id="about">
+                    <h4>About</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Vestibulum id ligula porta felis euismod semper.</p>
+                </section>
+                <section class="footer-section" id="get_involved">
+                    <h4>Get Involved</h4>
+                    <p>Curabitur blandit tempus porttitor.</p>
+                    <p>Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </section>
+                <section class="footer-section" id="fascinating_facts">
+                    <h4>Fascinating Facts</h4>
+                    <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                    <p>Donec ullamcorper nulla non metus auctor fringilla.</p>
+                </section>
+                <section class="footer-section" id="contact">
+                    <h4>Contact</h4>
+                    <p>Email: example@example.com</p>
+                    <p>Phone: +123 456 7890</p>
+                </section>
+            </div>
+            <div id="low_footer">
+                Kevin | KPL Graphics | Coordinates | Copyright ©2024
+            </div>
+        </footer>        
     </body>
 </html>
